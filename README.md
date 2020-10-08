@@ -1,3 +1,19 @@
+# Notes 
+
+This is a sloppy copy of https://github.com/yemount/pose-animator. It is edited to run with the webrtc server and client from https://github.com/lisajamhoury/WebRTC-Simple-Peer-Examples
+
+Run express-server from the command line from https://github.com/lisajamhoury/WebRTC-Simple-Peer-Examples
+(No need to open localhost:3000)
+
+Run yarn watch in this folder, this project will connect to your socket server (express_server) on port 80. 
+
+The webrtc client is included in utils. 
+
+All changes to the demo need to be made in camera.js because it's being built before it is included in the camera.html. 
+See the import line at camera.js line 38. If you need additional functions from the client you need to import them there. 
+
+See lines 212 - 223 in camera.js for get and send data functionality. 
+
 # Pose Animator
 
 Pose Animator takes a 2D vector illustration and animates its containing curves in real-time based on the recognition result from PoseNet and FaceMesh. It borrows the idea of skeleton-based animation from computer graphics and applies it to vector characters.
